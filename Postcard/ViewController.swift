@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var enterNameTextField: UITextField!
     
     @IBOutlet weak var enterMessageTextField: UITextField!
@@ -28,11 +30,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Send Mail button has been pressed
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        
+        // Populate the messageLabel
         messageLabel.text = enterMessageTextField.text
         messageLabel.hidden = false
         messageLabel.textColor = UIColor.blueColor()
         enterMessageTextField.text = ""
+        
+        // Populate the name label
+        nameLabel.text = enterNameTextField.text
+        nameLabel.hidden = false
+        nameLabel.textColor = UIColor.greenColor()
+        enterNameTextField.text = ""
+        
         enterMessageTextField.resignFirstResponder() // hide the keyboard
         sendMailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }

@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gmc-U3-DLA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZJz-0i-Vyd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-Pl-FSg">
@@ -56,7 +57,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfU-K5-TiR">
@@ -103,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7TM-ti-nRX"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6U-x2-V5e">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="178" width="200" height="80"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="NHl-Ux-Y9i"/>
                                 <exclude reference="2k1-pd-z57"/>
                                 <exclude reference="BVr-qM-hSP"/>
+                                <exclude reference="H6U-x2-V5e"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="NHl-Ux-Y9i"/>
                                 <include reference="2k1-pd-z57"/>
                                 <include reference="BVr-qM-hSP"/>
+                                <include reference="H6U-x2-V5e"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                         <outlet property="enterMessageTextField" destination="2k1-pd-z57" id="uu5-MC-5cF"/>
                         <outlet property="enterNameTextField" destination="NHl-Ux-Y9i" id="zTe-9f-Rln"/>
                         <outlet property="messageLabel" destination="LfU-K5-TiR" id="Elz-V3-BU3"/>
+                        <outlet property="nameLabel" destination="H6U-x2-V5e" id="AQe-Ut-cSJ"/>
                         <outlet property="sendMailButton" destination="BVr-qM-hSP" id="MpY-sN-EyU"/>
                     </connections>
                 </viewController>
